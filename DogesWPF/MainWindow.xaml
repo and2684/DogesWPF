@@ -80,9 +80,11 @@
                   Grid.Row="1" 
                   Margin="0,0,0,103" 
                   Width="400">
-                <ComboBox x:Name="cbBreed" HorizontalAlignment="Left" Margin="0,251,0,0" VerticalAlignment="Top" Width="390" Height="42" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="Black" Opacity="0.9" IsReadOnly="True" FontFamily="Cascadia Mono SemiBold"/>
+                <ComboBox x:Name="cbBreed" HorizontalAlignment="Center" VerticalAlignment="Top" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="Black" Opacity="0.9" IsReadOnly="True" FontFamily="Cascadia Mono SemiBold" Height="44" Width="390" Margin="0,224,0,0"/>
+                <ListBox d:ItemsSource="{d:SampleData ItemCount=5}" Margin="5,309,5,10" Width="390" Background="{x:Null}" Foreground="White" FontFamily="Cascadia Mono" FontSize="16" Opacity="0.9" BorderThickness="0,0,0,0"/>
 
             </Grid>
+            <DataGrid Grid.Row="1" d:ItemsSource="{d:SampleData ItemCount=5}" Background="{x:Null}" BorderBrush="{x:Null}" FontFamily="Cascadia Mono SemiBold"/>
         </Grid>
     </Border>
 </Window>
